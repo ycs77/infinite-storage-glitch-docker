@@ -1,6 +1,6 @@
 # Run Infinite Storage Glitch on Docker
 
-Running the [Infinite Storage Glitch](https://github.com/DvorakDwarf/Infinite-Storage-Glitch) in Docker.
+Build the [Infinite Storage Glitch](https://github.com/DvorakDwarf/Infinite-Storage-Glitch) in Docker.
 
 Build docker image:
 

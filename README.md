@@ -5,15 +5,17 @@ Build the [Infinite Storage Glitch](https://github.com/DvorakDwarf/Infinite-Stor
 Build docker image:
 
 ```bash
-docker build -t ycs77/infinite-storage-glitch .
+docker build -t isg .
 ```
 
-Using docker image, change `my/path` to your real path, and put your files to `resource` directory:
+Using docker image, put your files to `resource` directory:
 
 ```bash
-docker run --rm -it -v /my/path/resource:/resource ycs77/infinite-storage-glitch
+docker run --rm -it -v "${PWD}/resource":/resource isg
 # or using Git Bash on Windows
-docker run --rm -it -v D:/my/path/resource:/resource ycs77/infinite-storage-glitch
+docker run --rm -it -v "/$PWD/resource":/resource isg
+# or using CMD on Windows
+docker run --rm -it -v %cd%/resource:/resource isg
 
 cd resource
 # using Infinite Storage Glitch

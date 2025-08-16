@@ -5,7 +5,7 @@ RUN set -xe && \
     apt upgrade -y && \
     apt install -y libopencv-dev build-essential libssl-dev clang libclang-dev git ffmpeg && \
     export OPENCV_INCLUDE_PATHS="/usr/include/,/usr/include/opencv4" && \
-    git clone https://github.com/DvorakDwarf/Infinite-Storage-Glitch.git && \
+    git clone https://github.com/ycs77/Infinite-Storage-Glitch.git && \
     cd Infinite-Storage-Glitch && \
     cargo build --release && \
     chmod +x target/release/isg_4real && \
